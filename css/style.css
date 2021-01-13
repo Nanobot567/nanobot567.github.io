@@ -1,4 +1,7 @@
 .title{
   font-size: 80px;
-  color: red;
+  background-color: red;
+}
+h1{
+  text-size: 80px;
 }
