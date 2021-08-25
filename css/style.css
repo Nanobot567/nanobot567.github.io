@@ -1,7 +1,97 @@
-body{
-  background-color: black;
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.tg td{
+  border-color:lime;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+.tg th{
+  border-color:lime;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+.tg .termbold{
+  color:#32cb00;
+  font-family:"Courier New", Courier, monospace !important;
+  font-weight:bold;
+  text-align:center;
+  vertical-align:top
+}
+.tg .boldcenter{
+  font-weight:bold;
+  text-align:center;
+  vertical-align:top
+}
+.tg .tablelbl{
+  color:#34ff34;
+  font-family:"Courier New", Courier, monospace !important;
+  text-align:center;
+  vertical-align:top;
+  text-decoration:none;
+}
+.tg .tablelbl_b{
+  font-family:"Courier New", Courier, monospace !important;
+  text-align:center;
+  vertical-align:top;
+  text-decoration:none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: red;
+}
+h1.title{
+  color:lime;
+  text-align:center; 
+  font-family: monospace; 
+  font-size: 60px; 
+  text-shadow: horizontal-shadow vertical-shadow blur color;
 }
 a{
   text-decoration: none;
-  color: red;
+}
+.blink {
+  -webkit-animation: 1s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 1s linear infinite condemned_blink_effect;
+}
+
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect {
+0% {
+  visibility: hidden;
+}
+50% {
+  visibility: hidden;
+}
+100% {
+  visibility: visible;
+}
+
+
+@keyframes condemned_blink_effect {
+0% {
+visibility: hidden;
+}
+50% {
+visibility: hidden;
+}
+100% {
+visibility: visible;
+}
 }
