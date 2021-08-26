@@ -57,6 +57,14 @@ h1.title{
   font-size: 60px; 
   text-shadow: horizontal-shadow vertical-shadow blur color;
 }
+
+h3.sub{
+  color:lime;
+  text-align:center; 
+  font-family: monospace; 
+  font-size: 30px; 
+  text-shadow: horizontal-shadow vertical-shadow blur color;
+}
 a{
   text-decoration: none;
 }
