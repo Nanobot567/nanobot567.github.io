@@ -58,7 +58,7 @@ h1.title{
   text-shadow: horizontal-shadow vertical-shadow blur color;
 }
 
-h3.subtitle{
+h3{
   color:lime;
   text-align:center; 
   font-family: monospace; 
