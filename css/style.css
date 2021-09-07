@@ -65,6 +65,17 @@ h3{
   font-size: 35px;
 }
 
+h4{
+  color:lime;
+  text-align:center; 
+  font-family: monospace; 
+  font-size: 20px;
+}
+
+span.nope{
+  color:red;
+}
+
 a{
   text-decoration: none;
 }
