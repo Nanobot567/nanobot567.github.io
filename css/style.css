@@ -96,7 +96,7 @@ h2.sctitle{
   font-size: 45px;
 }
 
-h4, li{
+h4, li {
   color:lime;
   text-align:center; 
   font-family: monospace; 
@@ -108,14 +108,15 @@ li {
   padding-right: 30px;
 }
 
-.rightalign{
+.rightalign {
   color:lime;
   text-align:right;
   padding-right: 20px;
   font-family: monospace; 
   font-size: 20px;
 }
-h4.backbtn{
+
+h4.backbtn {
   color:lime;
   text-align:left; 
   font-family: monospace; 
@@ -134,14 +135,14 @@ video {
   color:red;
 }
 
-span.nope{
+span.nope {
   color:red;
 }
 
-a{
+a {
   text-decoration: none;
 }
-a.showcase{
+a.showcase {
   color:#34ff34;
   font-family:"Courier New", Courier, monospace !important;
   text-align:center;
