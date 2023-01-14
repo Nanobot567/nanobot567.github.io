@@ -3,21 +3,19 @@
   border-spacing:0;
 }
 .tg td{
-  border-color:lime;
+  border-color:white;
   border-style:solid;
   border-width:1px;
-  font-family:Arial, sans-serif;
-  font-size:14px;
+  font-family:'Courier New', Courier, monospace;
   overflow:hidden;
   padding:10px 5px;
   word-break:normal;
 }
 .tg th{
-  border-color:lime;
+  border-color:white;
   border-style:solid;
   border-width:1px;
-  font-family:Arial, sans-serif;
-  font-size:14px;
+  font-family:'Courier New', Courier, monospace;
   font-weight:normal;
   overflow:hidden;
   padding:10px 5px;
@@ -36,7 +34,7 @@
   vertical-align:top
 }
 .tg .tablelbl{
-  color:#34ff34;
+  color:white;
   font-family:"Courier New", Courier, monospace !important;
   text-align:center;
   vertical-align:top;
@@ -44,7 +42,7 @@
 }
 
 blockquote{
-  color:#34ff34;
+  color:white;
   font-family:"Courier New", Courier, monospace !important;
   text-align:center;
   vertical-align:top;
@@ -52,55 +50,55 @@ blockquote{
 }
 
 a:link {
-  color: white;
+  color: red;
 }
 
 a:visited {
-  color: red;
+  color: darkred;
 }
 
 a.menu:link {
-  color: red;
+  color: darkred;
 }
 
 a.menu:visited {
-  color: white;
+  color: darkred;
 }
 
 h1.title{
-  color:lime;
-  text-align:center; 
-  font-family: monospace; 
-  font-size: 60px; 
+  color:white;
+  text-align:left; 
+  font-family: monospace;
   text-shadow: horizontal-shadow vertical-shadow blur color;
 }
 
 h3{
-  color:lime;
-  text-align:center; 
+  color:white;
+  text-align:left; 
   font-family: monospace; 
-  font-size: 35px;
 }
 
 h3.showcase{
-  color:lime;
-  text-align:center; 
+  color:white;
+  text-align:left; 
   font-family: monospace; 
-  font-size: 50px;
+}
+
+h2 {
+  color:white;
 }
 
 h2.sctitle{
-  color:lime;
-  text-align:center; 
+  color:white;
+  text-align:left; 
   font-family: monospace; 
-  font-size: 45px;
 }
 
 h4, li {
-  color:lime;
-  text-align:center; 
+  color:white;
+  text-align:left; 
   font-family: monospace; 
-  font-size: 20px;
+
   list-style-type: none;
 }
 
@@ -109,22 +107,22 @@ li {
 }
 
 .rightalign {
-  color:lime;
+  color:white;
   text-align:right;
   padding-right: 20px;
   font-family: monospace; 
-  font-size: 20px;
+  
 }
 
 h4.backbtn {
-  color:lime;
+  color:white;
   text-align:left; 
   font-family: monospace; 
-  font-size: 20px;
+  
 }
 
 video {
-  align-items: center;
+  align-items: left;
   width: 50%;
   height: 300px;
   /* object-fit: cover; */
@@ -139,15 +137,11 @@ span.nope {
   color:red;
 }
 
-a {
-  text-decoration: none;
-}
 a.showcase {
-  color:#34ff34;
+  color:white;
   font-family:"Courier New", Courier, monospace !important;
-  text-align:center;
+  text-align:left;
   vertical-align:top;
-  text-decoration:none;
 }
 
 .blink {
@@ -157,13 +151,16 @@ a.showcase {
 
 footer {
   text-align: center;
-  color:lime;
+  color:white;
   border-style: solid;
+  position: fixed;
+  bottom: 0px;
+  width: calc(100vw - 20px);
 }
 
 header {
-  text-align: center;
-  color:lime;
+  text-align: left;
+  color:white;
 }
 
 .backbtn {
