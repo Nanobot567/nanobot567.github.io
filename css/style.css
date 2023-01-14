@@ -1,103 +1,75 @@
-.tg  {
-  border-collapse:collapse;
-  border-spacing:0;
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.tg td{
-  border-color:white;
-  border-style:solid;
-  border-width:1px;
-  font-family:'Courier New', Courier, monospace;
-  overflow:hidden;
-  padding:10px 5px;
-  word-break:normal;
+.tg td {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
 }
-.tg th{
-  border-color:white;
-  border-style:solid;
-  border-width:1px;
-  font-family:'Courier New', Courier, monospace;
-  font-weight:normal;
-  overflow:hidden;
-  padding:10px 5px;
-  word-break:normal;
+.tg th {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
 }
-.tg .termbold{
-  color:#32cb00;
-  font-family:"Courier New", Courier, monospace !important;
-  font-weight:bold;
-  text-align:center;
-  vertical-align:top
+.tg .termbold {
+  /* color: #32cb00; */
+  
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
 }
-.tg .boldcenter{
-  font-weight:bold;
-  text-align:center;
-  vertical-align:top
+.tg .boldcenter {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
 }
-.tg .tablelbl{
-  color:white;
-  font-family:"Courier New", Courier, monospace !important;
-  text-align:center;
-  vertical-align:top;
-  text-decoration:none;
+.tg .tablelbl {
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
 }
 
-blockquote{
-  color:white;
-  font-family:"Courier New", Courier, monospace !important;
-  text-align:center;
-  vertical-align:top;
-  text-decoration:none;
+blockquote {
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
 }
 
-a:link {
-  color: red;
-}
-
-a:visited {
+a:visited,a.menu:link,a.menu:visited {
   color: darkred;
 }
 
-a.menu:link {
-  color: darkred;
-}
-
-a.menu:visited {
-  color: darkred;
-}
-
-h1.title{
-  color:white;
-  text-align:left; 
-  font-family: monospace;
+h1.title {
+  text-align: left;
   text-shadow: horizontal-shadow vertical-shadow blur color;
 }
 
-h3{
-  color:white;
-  text-align:left; 
-  font-family: monospace; 
+h3,h3.showcase {
+  text-align: left;
 }
 
-h3.showcase{
-  color:white;
-  text-align:left; 
-  font-family: monospace; 
+body {
+  color: white;
+  font-family: monospace;
 }
 
-h2 {
-  color:white;
+h2.sctitle {
+  text-align: left;
 }
 
-h2.sctitle{
-  color:white;
-  text-align:left; 
-  font-family: monospace; 
-}
-
-h4, li {
-  color:white;
-  text-align:left; 
-  font-family: monospace; 
+h4,
+li {
+  text-align: left;
 
   list-style-type: none;
 }
@@ -107,18 +79,12 @@ li {
 }
 
 .rightalign {
-  color:white;
-  text-align:right;
+  text-align: right;
   padding-right: 20px;
-  font-family: monospace; 
-  
 }
 
 h4.backbtn {
-  color:white;
-  text-align:left; 
-  font-family: monospace; 
-  
+  text-align: left;
 }
 
 video {
@@ -129,19 +95,13 @@ video {
   z-index: -100;
 }
 
-.warn {
-  color:red;
-}
-
-span.nope {
-  color:red;
+.redacted,a:link {
+  color: red;
 }
 
 a.showcase {
-  color:white;
-  font-family:"Courier New", Courier, monospace !important;
-  text-align:left;
-  vertical-align:top;
+  text-align: left;
+  vertical-align: top;
 }
 
 .blink {
@@ -149,9 +109,14 @@ a.showcase {
   animation: 1s linear infinite condemned_blink_effect;
 }
 
+.fastblink {
+  -webkit-animation: 0.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 0.5s linear infinite condemned_blink_effect;
+}
+
 footer {
   text-align: center;
-  color:white;
+  color: white;
   border-style: solid;
   position: fixed;
   bottom: 0px;
@@ -160,42 +125,49 @@ footer {
 
 header {
   text-align: left;
-  color:white;
+  color: white;
 }
 
 .backbtn {
   text-align: left;
 }
 
-
 /* for Safari 4.0 - 8.0 */
 @-webkit-keyframes condemned_blink_effect {
-0% {
-  visibility: hidden;
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
-50% {
-  visibility: hidden;
-}
-100% {
-  visibility: visible;
-}
-}
-
 
 @keyframes condemned_blink_effect {
-0% {
-visibility: hidden;
-}
-50% {
-visibility: hidden;
-}
-100% {
-visibility: visible;
-}
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .rainbow_text_animated {
-  background: linear-gradient(to right, #ff0000, #ff8c00 , #fffb00, #00ff11, #0084ff, #a200ff, #ff00ea);
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff8c00,
+    #fffb00,
+    #00ff11,
+    #0084ff,
+    #a200ff,
+    #ff00ea
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -204,11 +176,12 @@ visibility: visible;
 }
 
 @keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
+  0%,
+  100% {
+    background-position: 0 0;
   }
 
   50% {
-      background-position: 100% 0;
+    background-position: 100% 0;
   }
 }
