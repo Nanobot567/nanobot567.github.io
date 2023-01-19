@@ -157,7 +157,7 @@ header {
   }
 }
 
-.rainbow_text_animated {
+.rainbow {
   background: linear-gradient(
     to right,
     #ff0000,
