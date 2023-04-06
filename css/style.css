@@ -117,10 +117,10 @@ a.showcase {
 footer {
   text-align: center;
   color: white;
-  border-style: solid;
+  /* border-style: solid; */
   position: fixed;
   bottom: 0px;
-  width: calc(100vw - 20px);
+  /* width: calc(100vw - 20px); */
 }
 
 header {
