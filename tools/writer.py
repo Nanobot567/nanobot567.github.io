@@ -19,7 +19,7 @@ print("enter your blog post below now. type /q to quit\n")
 
 root = Tk()
 
-label = Label(root, text="Enter your comment:")
+label = Label(root, text="Enter text:")
 label.pack(pady=10)
 
 textbox = ScrolledText(root, width=50, height=10, wrap=WORD)
