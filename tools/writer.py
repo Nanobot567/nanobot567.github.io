@@ -8,14 +8,10 @@ from os import getcwd,chdir
 chdir("..")
 
 now = datetime.today()
-now = [str(now.month),str(now.day),str(now.year)]
-todaysdate = now[0]+"/"+now[1]+"/"+now[2]
+now = [str(now.month),str(now.day+1),str(now.year)]
+todaysdate = now[0]+"/"+now[1]+"/"+now[2][2:]
 
-text = ""
-html = ""
-
-print("found date is "+todaysdate)
-print("enter your blog post below now. type /q to quit\n")
+print("found date is "+todaysdate+"\n")
 
 root = Tk()
 
@@ -48,18 +44,25 @@ def accept():
 """
 
     text = textbox.get("1.0", END)
+    print("text: "+text)
+    text = text.replace("\n\n","\n        </p>\n")
     htmfile = htmfile.replace("INSERT_TEXT_HERE_THANKS",text)
 
     with open("blog/"+todaysdate.replace("/","-")+".html","w+") as f:
         f.write(htmfile)
+        print("wrote post to blog/"+todaysdate.replace("/","-")+".html")
 
     with open("blog.html", "r") as f:
         html = f.read()
         index = html.rfind("</h3>")
         html = html[:index+6] + f'        <h3><a href="blog/{todaysdate.replace("/","-")}.html" class="menu">{todaysdate}</a></h3>\n' + html[index+6:]
+        print("replaced text in blog.html")
     
     with open("blog.html", "w") as f:
         f.write(html)
+        print("wrote changes to blog.html")
+
+    quit()
 
 button = Button(root, text="Accept", command=accept)
 button.pack(pady=10)
