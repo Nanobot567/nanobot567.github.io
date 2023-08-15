@@ -28,8 +28,12 @@ Current ideas:
         </p>
         So there are plenty of backup plans in case something goes wrong or one of these methods get patched. I'm also constantly looking for other ways to make school more livable and the laptops less annoying to work with, so maybe I'll discover the Holy Grail of workarounds sometime soon!!
         </p>
-        <script src="js/index.js", type="text/javascript"></script>
-        <button onclick="hideshow('hideshowdiv')">Extra information for the nerds</button>
+        <button onclick="var x = document.getElementById('hideshowdiv');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }">Extra information for the nerds</button>
         <div id="hideshowdiv" hidden="true">
             <b>Regarding PowerShell exploitation:</b> via VSCode you can use pwsh, or you can download the .msix bundle and install a new, unblocked pwsh that way.
             </p>
