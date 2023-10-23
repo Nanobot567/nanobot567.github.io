@@ -19,4 +19,4 @@ function swapColors() {
   element.style.color = backgroundColor;
 }
 
-setInterval(swapColors, 500);
+setInterval(swapColors, 250);
