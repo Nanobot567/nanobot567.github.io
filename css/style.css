@@ -45,6 +45,12 @@ blockquote {
   text-decoration: none;
 }
 
+button{
+  background-color: rgb(25, 25, 25);
+  color: darkred;
+  font-family: monospace;
+}
+
 a:visited,a.menu:link,a.menu:visited {
   color: darkred;
 }
