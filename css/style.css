@@ -47,7 +47,7 @@ blockquote {
 
 button{
   background-color: rgb(25, 25, 25);
-  color: darkred;
+  color: red;
   font-family: monospace;
 }
 
@@ -91,6 +91,12 @@ li {
 
 h4.backbtn {
   text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
 }
 
 video.showcase {
