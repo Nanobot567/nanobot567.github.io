@@ -7,7 +7,7 @@ function hideshow(elem) {
     }
 }
 
-const element = document.querySelector('.color-swap');
+const element = document.querySelector('.colorswap');
 
 function swapColors() {
   const styles = window.getComputedStyle(element);
