@@ -30,7 +30,7 @@ def accept():
             nanobot567's website | blog | {todaysdate}
         </title>
     </head>
-    <body style="background-color:black;">
+    <body>
         <h4 class = "backbtn"><a href="../blog.html"><-- back</a></h4>
         <h1 class = "title">nanobot567's website<span class="blink">_</span> </h1>
         <h2>blog</h2>
