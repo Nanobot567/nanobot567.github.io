@@ -66,8 +66,11 @@ h3,h3.showcase {
 
 html {
   color: white;
-  background-color: black;
   font-family: monospace;
+}
+
+body {
+  background-color: black;
 }
 
 h2.sctitle {
