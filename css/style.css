@@ -64,8 +64,9 @@ h3,h3.showcase {
   text-align: left;
 }
 
-body {
+html {
   color: white;
+  background-color: black;
   font-family: monospace;
 }
 
