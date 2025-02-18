@@ -28,238 +28,239 @@
 
     <h3><u>6/19/24 - (almost) A Year of Game Development [SEGFAULT]</u></h3>
 
-    <h4>
       Hello! Today I felt like creating a massive devlog document of my journey so far developing what is now called
       <span class="rainbow">Segfault</span> (short for segmentation fault) for the <a
-        href="https://play.date/">Playdate</a>. So, here we go!
-      </p>
+        href="https:/p /lay.date/">Playdate</a>. So, here we go!
+      <p />
       I want to say I started working on Segfault at around <b>June 30th of 2023</b>. According to the last modified
       date of everything in my folder for this project, this image was the first thing created:
-      </p>
+      <p />
 
       <img src="images/6-19-24/card-pressed.png"></img>
-      </p>
+      <p />
 
       A work of art, if I do say so myself.
-      </p>
+      <p />
 
       This is actually the game's card-pressed image, located at <span
         class="redacted">/src/SystemAssets/card-pressed.png</span>. I guess I didn't
       really have a clue what I was working on at this point, so it makes sense.
-      </p>
+      <p />
 
       I didn't start frequently committing to my git repository until September 10, when I FINALLY committed my changes.
       Sitting at <b><i>55 changed files with 2,420 insertions</i></b>, this commit, ambiguously named "backup", contains
       most
       of the
       code which makes up the engine.
-      </p>
+      <p />
 
       The README at this point in time:
-      </p>
+      <p />
 
       <img src="images/6-19-24/firstreadme.png"></img>
-      </p>
+      <p />
 
       I knew I wanted it to be some sort of text-based RPG, but that was about it.
-      </p>
+      <p />
 
       The 2-8 hour time limit seemed like an interesting idea. I would definitely like to incorporate it into something
       later on down the line, but as development continued I dropped it ¯\_(ツ)_/¯
-      </p>
+      <p />
 
       Weirdly, the README says "coolgame" but I must've already decided on Overflow as a name, since there's a build of
       the game under that name.
-      </p>
+      <p />
 
       Speaking of which, here's what it looked like at the time!!
-      </p>
+      <p />
 
       <img src="images/6-19-24/oldoverflow.gif"></img>
-      </p>
+      <p />
 
       …aaaand that's about it. But hey, <span class="blink">it works!</span> <img src="images/6-19-24/nice.png"></img>
-      </p>
+      <p />
 
       The map format is about the same here, except for the action format. Instead of JSON, like it is now, it was some
       goofy proprietary thing I made. No clue what I was thinking, but at least I made the switch before things got too
       complicated 😅
-      </p>
+      <p />
 
       <img src="images/6-19-24/oldmapformat.png"></img>
-      </p>
+      <p />
 
       I'd also like to point out a mistake that would come back to bite me later. This function in funcs.lua:
-      </p>
+      <p />
 
       <img src="images/6-19-24/mistake.png"></img>
-      </p>
+      <p />
 
       Can you spot the issue here? XD
-      </p>
+      <p />
 
       Basically, this massive table would get redefined every time getIDfromChar() is called. But I wouldn't
       notice this until much further down the line. Onward!
-      </p>
+      <p />
 
       Fast forward a couple commits (and a couple weeks), and I swapped my action format to JSON. At first I
       wanted to use something like msgpack to compress all of my mapfiles down, but for some reason the Playdate
       has difficulty reading binary files from disk (or maybe I'm just being incredibly stupid haha), so I dropped
       the idea later on.
-      </p>
+      <p />
 
       I decided on a class-based system for all of the collectibles you can get in the game here as well. From
       experience, object oriented programming scales very well and makes it super easy to keep everything
       organized. I don't know what I'd do without it!
-      </p>
+      <p />
 
       I also added some basic player stats to the top left, as well as upgraded the battle engine to have a little
       menu in the bottom left corner.
-      </p>
+      <p />
 
       <img src="images/6-19-24/overflow2.gif"></img>
-      </p>
+      <p />
 
       The next commit, also called "backup" (man, incredibly helpful commit names lol) added what was the
       beginning of the title screen that is still in place today.
-      </p>
+      <p />
 
       In this commit I added the first revision of the introduction as well. The alert boxes are very off center,
       however XD
-      </p>
+      <p />
 
       Saving was added here too!
-      </p>
+      <p />
 
       <img src="images/6-19-24/overflow3.gif"></img>
-      </p>
+      <p />
 
       At this point I must've woken up and realized in order for git to be helpful I should probably commit more
       and name them half-decently, since after this every major change has its own commit.
-      </p>
+      <p />
 
       I added some placeholder art (still haven't changed any of it haha), shops, and the first "attack game" in
       commit <span class="redacted">461179f</span>, finally started throwing together the introduction to one of the
       main characters in <span class="redacted">3d09875</span>,
       and completed map preloading in <span class="redacted">79aaaf8</span>.
-      </p>
+      <p />
 
       Eventually, I figured out that getIDfromChar() issue I mentioned earlier, which boosted map loading a
       considerable amount on device, from 0.7 seconds to ~0.05! Ugh, that had been bugging me the entire time. I'm
       glad I'm not still stuck with it.
-      </p>
+      <p />
 
       Before the fix, preloading looked like this:
-      </p>
+      <p />
 
       <img src="images/6-19-24/beforefix.gif"></img>
-      </p>
+      <p />
 
       Afterwards, it looks like this!
-      </p>
+      <p />
 
       <img src="images/6-19-24/afterfix.gif"></img>
-      </p>
+      <p />
 
       To this day I'm still wondering if I should preload maps at all or just load them on the fly, since it's so
       quick now. I'm pretty sure I'll get rid of preloading when the game releases. I may need the extra RAM,
       haha.
-      </p>
+      <p />
 
       In commit <span class="redacted">d80eb14</span> ("fixed battle damage rounding, cleaned up introchoices, updated
       docs", February 29) my
       documentation for the game became much more massive. I find that more Markdown is always better for big
       projects. Personally, I use it for both ideas and TODO lists that I divide into high, medium, and low
       priorities. Very helpful to have :)
-      </p>
+      <p />
 
       I officially changed the name of the game from Overflow to Segfault in commit <span
         class="redacted">a4ec205</span>! Honestly, this wasn't
       really a hard decision and I don't regret it, although Overflow does roll off the tongue better.
-      </p>
+      <p />
 
       <img src="images/6-19-24/newname.png"></img>
-      </p>
+      <p />
 
       Achievements were added in <span class="redacted">cd918f1</span>, in March of this year. Currently, I'm waiting
       for the Playdate Squad's
-      <a href="https://github.com/PlaydateSquad/pd-achievements">pd-achievements</a> standard to be finalized before I
+      <a href="https://github.comp /laydateSquad/pd-achievements">pd-achievements</a> standard to be finalized before I
       do too much work on them. I suppose I could go ahead and
       add what they have, but I'd rather not do anything substantial if they make some drastic changes down the
       line.
-      </p>
+      <p />
 
       I finished a bunch of status effects (such as regeneration, vigor, fortitude) in commit <span
         class="redacted">7bd0424</span>, which are
       only utilized in battles at the moment. Around this time, my main focus was on the battle engine that I
       assumed would be the most "exciting" part of the game, and I was constantly trying to figure out new ways to
       make it more fun. Even now, the game is still a bit of a top-down walking simulator.
-      </p>
+      <p />
 
       In commit <span class="redacted">f540897</span>, I created the second attack game besides the standard "bar" game:
       reload. It involves the
       user cranking backwards and forwards and pressing A in quick succession. The faster you do this, the more
       damage is inflicted. Not the most realistic thing ever, but I find it pretty fun!
-      </p>
+      <p />
 
       <button onclick="hideshow('hideshowdiv')">WARNING: Flashing text, gunplay</button>
       <div id="hideshowdiv" style="display: none;">
         <img src="images/6-19-24/reload.gif"></img>
       </div>
-      </p>
+      <p />
 
       <span class="redacted">284c40a</span> added an item count to the "items" menu, which is a pretty huge deal
       considering the sheer amount of
       items I'll probably have in this game closer to release. It was already a pain trying to scroll through all
       of them even in testing, so (for me at least) this is a very nice QoL change.
-      </p>
+      <p />
 
       It took me way too long to add game restarting on death, which was added in May 27 in commit <span
         class="redacted">2a40577</span>. I
       guess since I had been manually refreshing the game up to this point anyway, it didn't seem like too big of
       a deal, but now that I'm kind of getting down to the wire on the game engine it occurred to me that this is
       a no-brainer that should have been in the game from the start, haha.
-      </p>
+      <p />
 
       A couple weeks ago I revamped the title screen. At first it was kind of a buggy mess, and editing save files
       was a bit of a pain and not the most intuitive thing ever (you had to press B to access a menu that
       displayed on the save file box itself… it was lame), but now all of the options are there when you press A
       on a file, kind of like how The Legend Of Zelda does things.
-      </p>
+      <p />
 
       <button onclick="hideshow('hideshowdiv2')">WARNING: Quick pattern changes</button>
       <div id="hideshowdiv2" style="display: none;">
         <img src="images/6-19-24/newtitlescreen.gif"></img>
       </div>
-      </p>
+      <p />
 
       And that brings us to today! Currently I'm working on a way to upgrade items and weapons, and polishing off
       the engine.
-      </p>
+      <p />
 
-    </h4>
     <h2>Final thoughts</h2>
 
-    <h4>
+    <p>
       So far, I've had a great time working on this game. It's helped me learn so many concepts and tips, and it's
       been fun seeing it all come together over time! I've written 6215 lines so far, which to be honest isn't
       really that much for nearly a full-fledged product. I feel like I'll have written 15000 lines by the end of
       this project, but we'll see!
-      </p>
+    <p />
 
+    <p>
       Can you tell I'm putting off finalizing the story and creating all of the maps, though? 😆 It's just
       so.. daunting. Like, it's all coming together, but it's difficult to make it all a cohesive whole. Or maybe
-      it's just scary to start >w>
-      </p>
+      it's just scary to start &lt;w&lt;
+    <p />
 
+    <p>
       I guess my goal for this project is to take my time and really make it look nice and feel really good to
       play. I'd hate to make my first "real" game (the adventures of horse the horse hardly counts haha) some
       rushed-out-the-door thing. So, maybe it'll be a while before anyone can actually play Segfault, but
       hopefully it'll be worth it in the end!
-      </p>
-      </br>
-      Thanks for reading this kind of ranty blog post!! Hope you enjoyed(?) it :3
-    </h4>
+    <p />
+    <br />
+
+    <p>Thanks for reading this kind of ranty blog post!! Hope you enjoyed(?) it :3<p />
+
     <h5>
       <i>
         (Oh, by the way, if you ever want to try gamedev yourself, I highly recommend Playdate development, the SDK
@@ -272,8 +273,7 @@
         (and yes, i am embracing my inner :3, and there's nothing you can do to stop me!! hahahahaha)
       </i>
     </h6>
-    </p>
-    </h4>
+    <p />
     <h4 class = "backbtn"><a href="../blog.html"><-- back</a> | <a href="#">^ top</a></h4>
   </body>
 
