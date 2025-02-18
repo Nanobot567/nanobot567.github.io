@@ -24,44 +24,31 @@
             <h2>blog</h2>
 
             <h3><u>10/23/23</u></h3>
-            <h4>
-                Ahh, my monthly blog post! I don't write very often, but man, it's great to type something out that's personal and not related to school!
-                </p>
-                About a month ago, I decided I was going to make an ACTUAL GAME! The current title is <dfn class="redacted"><abbr title="i've also styled this as 'overflow' or '0verfl0w'. can't really decide which one to choose from XD">Overflow</abbr></dfn> (referring to the technical term 'stack overflow'), but I do want to change it if I ever come up with a better name. Overflow is cool but it's often misinterpreted (as I've witnessed from talking to my friends about it...).
-                </p>
-                I'm actually almost finished with the game engine! Once I brush it up and smash all of the bugs, I can finally add the story to the game, which should be the fun part.
-                </p>
-                Because I feel like it, I'm going to explain the <span class="rainbow">.map</span> file format that I created!
-            </h4>
+
+            <p>Ahh, my monthly blog post! I don't write very often, but man, it's great to type something out that's personal and not related to school!</p>
+            <p>About a month ago, I decided I was going to make an ACTUAL GAME! The current title is <dfn class="redacted"><abbr title="i've also styled this as 'overflow' or '0verfl0w'. can't really decide which one to choose from XD">Overflow</abbr></dfn> (referring to the technical term 'stack overflow'), but I do want to change it if I ever come up with a better name. Overflow is cool but it's often misinterpreted (as I've witnessed from talking to my friends about it...).</p>
+            <p>I'm actually almost finished with the game engine! Once I brush it up and smash all of the bugs, I can finally add the story to the game, which should be the fun part.</p>
+            <p>Because I feel like it, I'm going to explain the <span class="rainbow">.map</span> file format that I created!</p>
+
             <h2><span class="colorswap" style="background-color:black; color:darkcyan">THE .MAP FILE FORMAT</span></h2>
-            <h4>
-                Here's an example .map:
-            </h4>
-            </p>
+            <p>Here's an example .map:</p>
+
             <img src="images/mapex.png"></img>
-            </p>
-            <h4>
-                <ul>
-                    <li>Lines 1-15: This is the map that you will actually see on the screen.</li>
-                    <li>Lines 16-(line with -END-): Map exits. The format is 'map-name startX, startY, endX, endY, playerX, playerY'.</li>
-                    <li>Lines (line with -END-) to (line with -ENDI-): Bump interactions. Interactions are just big blocks of JSON ¯\_(ツ)_/¯. They're similar to the map enter interactions on line 19, except the first value in the JSON is a pair of X,Y coordinates instead of the amount of times the player needs to enter the map to run the actions.</li>
-                    <li>Lines (line with -ENDI-) to (end of file): Map enter interactions. Like stated before, it's basically the same as the bump interactions.</li>
-                </ul>
-                </p>
-                All of this together makes a big moshpit that somehow works when put into practice, albeit it is pretty slow to process (~.7 sec.). My solution? <span class="redacted">PRELOADING.</span> If preloading didn't exist (somehow), I'd have to either rewrite the engine in C or rewrite the map format <dfn class=""><abbr title="for context, originally i had a different way of handling interactions, which looked something like this: '{t}dummy::hello, world!;{w}1000'. this was kind of a good idea, except things got complicated quickly when i tried to add conditionals, or the 'branch' action as it is now. JSON fixed that problem immediately, but it took a while to rewrite, which i didn't enjoy too much.">again</abbr></dfn>, which would be possible but definitely not ideal.
-                </p>
-                I'm trying to have fun here, this shouldn't be a job!
-                </p>
-                I also got really excited and started to make music for Overflow! I think I created something pretty close to a movie soundtrack, which was EXACTLY what I was going for. This song is going to play during the ending cutscene!
-                </p>
-                <audio controls>
-                    <source src="music/end_wip.mp3" type="audio/mpeg">
-                </audio>
-                </p>
-                The only problem is that I can't animate for the life of me. And my drawings suck. So, I'm going to try to improve art-wise. Hopefully by the end of 2024 (that's when I plan to release the game, by the way) I'll be good enough to make something that looks kind of okay!
-                </p>
-                To sum up / In conclusion / Finally, I'm super happy that I'm making a game! It's been a ton of fun so far, and I don't plan on stopping any time soon, unless my creativity tanks and I become too unmotivated to continue...
-            </h4>
+
+            <ul>
+                <li>Lines 1-15: This is the map that you will actually see on the screen.</li>
+                <li>Lines 16-(line with -END-): Map exits. The format is 'map-name startX, startY, endX, endY, playerX, playerY'.</li>
+                <li>Lines (line with -END-) to (line with -ENDI-): Bump interactions. Interactions are just big blocks of JSON ¯\_(ツ)_/¯. They're similar to the map enter interactions on line 19, except the first value in the JSON is a pair of X,Y coordinates instead of the amount of times the player needs to enter the map to run the actions.</li>
+                <li>Lines (line with -ENDI-) to (end of file): Map enter interactions. Like stated before, it's basically the same as the bump interactions.</li>
+            </ul>
+            <p>All of this together makes a big moshpit that somehow works when put into practice, albeit it is pretty slow to process (~.7 sec.). My solution? <span class="redacted">PRELOADING.</span> If preloading didn't exist (somehow), I'd have to either rewrite the engine in C or rewrite the map format <dfn class=""><abbr title="for context, originally i had a different way of handling interactions, which looked something like this: '{t}dummy::hello, world!;{w}1000'. this was kind of a good idea, except things got complicated quickly when i tried to add conditionals, or the 'branch' action as it is now. JSON fixed that problem immediately, but it took a while to rewrite, which i didn't enjoy too much.">again</abbr></dfn>, which would be possible but definitely not ideal.</p>
+            <p>I'm trying to have fun here, this shouldn't be a job!</p>
+            <p>I also got really excited and started to make music for Overflow! I think I created something pretty close to a movie soundtrack, which was EXACTLY what I was going for. This song is going to play during the ending cutscene!</p>
+            <audio controls>
+                <source src="music/end_wip.mp3" type="audio/mpeg">
+            </audio>
+            <p>The only problem is that I can't animate for the life of me. And my drawings suck. So, I'm going to try to improve art-wise. Hopefully by the end of 2024 (that's when I plan to release the game, by the way) I'll be good enough to make something that looks kind of okay!</p>
+            <p>To sum up / In conclusion / Finally, I'm super happy that I'm making a game! It's been a ton of fun so far, and I don't plan on stopping any time soon, unless my creativity tanks and I become too unmotivated to continue...</p>
         </body>
     </html>
 </DOCTYPE>
