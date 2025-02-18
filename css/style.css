@@ -1,42 +1,20 @@
-.tg {
-  border-collapse: collapse;
-  border-spacing: 0;
+html {
+  color: #ddd;
+  font-family: monospace;
 }
-.tg td {
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
+
+body {
+  background-color: black;
+  font-size: 1.2em;
 }
-.tg th {
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  
-  font-weight: normal;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
+
+h3 {
+  text-align: left;
 }
-.tg .termbold {
-  /* color: #32cb00; */
-  
-  font-weight: bold;
-  text-align: center;
-  vertical-align: top;
-}
-.tg .boldcenter {
-  font-weight: bold;
-  text-align: center;
-  vertical-align: top;
-}
-.tg .tablelbl {
-  text-align: center;
-  vertical-align: top;
-  text-decoration: none;
+
+h4,
+li {
+  list-style-type: none;
 }
 
 blockquote {
@@ -45,98 +23,54 @@ blockquote {
   text-decoration: none;
 }
 
-button{
+button {
   background-color: rgb(25, 25, 25);
   color: red;
   font-family: monospace;
 }
 
-a:visited,a.menu:link,a.menu:visited {
+a:visited,
+a.menu:link,
+a.menu:visited {
   color: darkred;
 }
 
-h1.title {
-  text-align: left;
-  text-shadow: horizontal-shadow vertical-shadow blur color;
+.redacted,
+a:link,
+.red {
+  color: red;
 }
 
-h3,h3.showcase {
-  text-align: left;
-}
-
-html {
-  color: white;
-  font-family: monospace;
-}
-
-body {
-  background-color: black;
-}
-
-h2.sctitle {
-  text-align: left;
-}
-
-h4,
-li {
-  text-align: left;
-
-  list-style-type: none;
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 li {
   padding-right: 30px;
 }
 
-.rightalign {
+ol li {
+  list-style-type: none;
+  counter-increment: list;
+  position: relative;
+}
+
+ol li:after {
+  content: counter(list) ".";
+  position: absolute;
+  left: -2.5em;
+  width: 2em;
   text-align: right;
-  padding-right: 20px;
-}
-
-h4.backbtn {
-  text-align: left;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-
-video.showcase {
-  align-items: left;
-  width: 50%;
-  height: 300px;
-  /* object-fit: cover; */
-  z-index: -100;
-}
-
-.redacted,a:link {
-  color: red;
-}
-
-a.showcase {
-  text-align: left;
-  vertical-align: top;
-}
-
-.blink {
-  -webkit-animation: 1s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
-  animation: 1s linear infinite condemned_blink_effect;
-}
-
-.fastblink {
-  -webkit-animation: 0.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
-  animation: 0.5s linear infinite condemned_blink_effect;
+  color: white;
 }
 
 footer {
   text-align: center;
   color: white;
-  /* border-style: solid; */
   position: fixed;
   bottom: 0px;
-  /* width: calc(100vw - 20px); */
 }
 
 header {
@@ -144,23 +78,56 @@ header {
   color: white;
 }
 
-.backbtn {
-  text-align: left;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-ol li {
-    list-style-type: none;
-    counter-increment: list;
-    position: relative;
+th {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+  font-weight: bold;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
 }
 
-ol li:after {
-    content: counter(list) ".";
-    position: absolute;
-    left: -2.5em;
-    width: 2em;
-    text-align: right;
-    color: white;
+td {
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.blink {
+  -webkit-animation: 1s linear infinite condemned_blink_effect;
+  /* for Safari 4.0 - 8.0 */
+  animation: 1s linear infinite condemned_blink_effect;
+}
+
+.fastblink {
+  -webkit-animation: 0.5s linear infinite condemned_blink_effect;
+  /* for Safari 4.0 - 8.0 */
+  animation: 0.5s linear infinite condemned_blink_effect;
+}
+
+@font-face {
+  font-family: xythese;
+  src: url("../font/xythese-3x5.ttf");
+}
+
+.xythese {
+  font-family: xythese;
 }
 
 /* for Safari 4.0 - 8.0 */
@@ -168,9 +135,11 @@ ol li:after {
   0% {
     visibility: hidden;
   }
+
   50% {
     visibility: hidden;
   }
+
   100% {
     visibility: visible;
   }
@@ -180,25 +149,25 @@ ol li:after {
   0% {
     visibility: hidden;
   }
+
   50% {
     visibility: hidden;
   }
+
   100% {
     visibility: visible;
   }
 }
 
 .rainbow {
-  background: linear-gradient(
-    to right,
-    #ff0000,
-    #ff8c00,
-    #fffb00,
-    #00ff11,
-    #0084ff,
-    #a200ff,
-    #ff00ea
-  );
+  background: linear-gradient(to right,
+      #ff0000,
+      #ff8c00,
+      #fffb00,
+      #00ff11,
+      #0084ff,
+      #a200ff,
+      #ff00ea);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
