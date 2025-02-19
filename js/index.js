@@ -10,13 +10,15 @@ function hideshow(elem) {
 const element = document.querySelector('.colorswap');
 
 function swapColors() {
-  const styles = window.getComputedStyle(element);
+  if (element !== null) {
+    const styles = window.getComputedStyle(element);
 
-  const backgroundColor = styles.backgroundColor;
-  const color = styles.color;
+    const backgroundColor = styles.backgroundColor;
+    const color = styles.color;
 
-  element.style.backgroundColor = color;
-  element.style.color = backgroundColor;
+    element.style.backgroundColor = color;
+    element.style.color = backgroundColor;
+  }
 }
 
 setInterval(swapColors, 250);
