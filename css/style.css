@@ -1,11 +1,13 @@
-html {
-  color: #ddd;
-  font-family: monospace;
-}
 
 body {
+  color: #ddd;
+  font-family: monospace;
   background-color: black;
-  font-size: 1.2em;
+  font-size: 16px;
+  margin-left:10px;
+  max-width:70%;
+  position:relative;
+  margin-bottom: 20px;
 }
 
 h3 {
