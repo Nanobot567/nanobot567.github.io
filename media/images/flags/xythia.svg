@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="200"
+   viewBox="0 0 79.375 52.916666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="xythia.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f0bd8e;fill-opacity:1;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1"
+       id="rect1"
+       width="39.6875"
+       height="26.458334"
+       x="0"
+       y="0"
+       inkscape:label="tl" />
+    <rect
+       style="fill:#007aef;fill-opacity:1;stroke:#414141;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1"
+       id="rect1-7"
+       width="39.6875"
+       height="26.458334"
+       x="0"
+       y="26.458334"
+       inkscape:label="bl" />
+    <rect
+       style="fill:#d2002a;fill-opacity:1;stroke:#1c7bce;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect1-7-7"
+       width="39.6875"
+       height="26.458334"
+       x="39.6875"
+       y="0"
+       inkscape:label="tr" />
+    <rect
+       style="fill:#1e5825;fill-opacity:1;stroke:#7202db;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;stroke-opacity:1"
+       id="rect1-7-7-7"
+       width="39.6875"
+       height="26.458334"
+       x="39.6875"
+       y="26.458334"
+       inkscape:label="br" />
+    <path
+       style="fill:#eaeaea;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 39.6875,0 V 13.229167 L 19.84375,26.458333 H 0 19.84375 L 39.6875,39.6875 V 52.916666 39.6875 L 59.53125,26.458333 H 79.375 59.53125 L 39.6875,13.229167 Z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:label="diamond" />
+    <rect
+       style="fill:#592615;fill-opacity:0;stroke:#414141;stroke-width:1.04986666;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;stroke-linejoin:miter;stroke-linecap:butt"
+       id="rect3"
+       width="78.325134"
+       height="51.866798"
+       x="0.52493328"
+       y="0.52493167"
+       inkscape:label="outline" />
+  </g>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.30"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.95508466"
+     inkscape:cx="236.62824"
+     inkscape:cy="193.70011"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:window-width="1504"
+     inkscape:window-height="931"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+</svg>
