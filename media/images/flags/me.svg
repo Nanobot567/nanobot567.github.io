@@ -20,7 +20,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#006bdf;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#005daf;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-70"
        width="15.875"
        height="52.916668"
@@ -28,7 +28,7 @@
        y="0"
        inkscape:label="5" />
     <rect
-       style="fill:#f5574a;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#c83524;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-9"
        width="15.875"
        height="52.916668"
@@ -36,7 +36,7 @@
        y="6.9388939e-18"
        inkscape:label="4" />
     <rect
-       style="fill:#c935d1;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#9a26a2;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-5"
        width="15.875"
        height="52.916668"
@@ -44,7 +44,7 @@
        y="1.2561239e-07"
        inkscape:label="3" />
     <rect
-       style="fill:#f5574a;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#c83524;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
        id="rect1-7"
        width="15.875"
        height="52.916668"
@@ -52,11 +52,11 @@
        y="0"
        inkscape:label="2" />
     <rect
-       style="fill:#006bdf;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       style="fill:#005daf;fill-opacity:1;stroke:#7116cf;stroke-width:0;stroke-dasharray:none;paint-order:stroke fill markers"
        id="rect1"
        width="15.875"
        height="52.916668"
-       x="0"
+       x="-2.4482167e-08"
        y="0"
        inkscape:label="1" />
   </g>
@@ -67,9 +67,9 @@
      borderopacity="0.30"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4816072"
-     inkscape:cx="33.747136"
-     inkscape:cy="91.117268"
+     inkscape:zoom="0.81079081"
+     inkscape:cx="223.23884"
+     inkscape:cy="189.93802"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:showpageshadow="0"

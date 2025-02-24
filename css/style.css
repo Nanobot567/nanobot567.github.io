@@ -27,14 +27,14 @@ blockquote {
 
 button {
   background-color: rgb(25, 25, 25);
-  color: red;
+  color: rgb(255, 0, 0);
   font-family: monospace;
 }
 
 a:visited,
 a.menu:link,
 a.menu:visited {
-  color: darkred;
+  color: rgb(175, 0, 0);
 }
 
 .redacted,
@@ -93,7 +93,7 @@ th {
 
   font-weight: bold;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 10px 8px;
   word-break: normal;
 }
 
@@ -107,7 +107,7 @@ td {
   border-width: 1px;
 
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 10px 8px;
   word-break: normal;
 }
 
