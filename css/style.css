@@ -49,10 +49,6 @@ img {
   width: auto;
 }
 
-li {
-  padding-right: 30px;
-}
-
 ol li {
   list-style-type: none;
   counter-increment: list;
@@ -66,6 +62,15 @@ ol li:after {
   width: 2em;
   text-align: right;
   color: white;
+}
+
+ul li {
+  list-style-type: none;
+  counter-increment: list;
+}
+
+ul li:before {
+  content: "- ";
 }
 
 footer {
