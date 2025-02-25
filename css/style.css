@@ -1,22 +1,12 @@
-
 body {
   color: #ddd;
   font-family: monospace;
-  background-color: black;
+  background-color: #0f0f0f;
   font-size: 16px;
-  margin-left:10px;
-  max-width:70%;
-  position:relative;
+  margin-left: 10px;
+  max-width: 70%;
+  position: relative;
   margin-bottom: 20px;
-}
-
-h3 {
-  text-align: left;
-}
-
-h4,
-li {
-  list-style-type: none;
 }
 
 blockquote {
@@ -26,7 +16,7 @@ blockquote {
 }
 
 button {
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(40, 40, 40);
   color: rgb(255, 0, 0);
   font-family: monospace;
 }
@@ -183,6 +173,7 @@ td {
 }
 
 @keyframes rainbow_animation {
+
   0%,
   100% {
     background-position: 0 0;
