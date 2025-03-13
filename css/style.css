@@ -21,6 +21,15 @@ button {
   font-family: monospace;
 }
 
+p.block {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #222;
+  border-style: dotted;
+  border-color: #333;
+}
+
 a:visited,
 a.menu:link,
 a.menu:visited {
