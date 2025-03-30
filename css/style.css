@@ -1,6 +1,6 @@
 body {
   color: #ddd;
-  font-family: monospace;
+  font-family: "IA Writer Mono";
   background-color: #0f0f0f;
   font-size: 16px;
   margin-left: 10px;
@@ -18,7 +18,7 @@ blockquote {
 button {
   background-color: rgb(40, 40, 40);
   color: rgb(255, 0, 0);
-  font-family: monospace;
+  font-family: "IA Writer Mono";
 }
 
 p.block {
@@ -115,6 +115,12 @@ td {
   word-break: normal;
 }
 
+.index-footer {
+  padding-bottom: 1em;
+  width: 100%;
+  text-align: left;
+}
+
 .blink {
   -webkit-animation: 1s linear infinite condemned_blink_effect;
   /* for Safari 4.0 - 8.0 */
@@ -127,10 +133,38 @@ td {
   animation: 0.5s linear infinite condemned_blink_effect;
 }
 
+/* fonnnnts */
+
 @font-face {
   font-family: xythese;
   src: url("../font/xythese-3x5.ttf");
 }
+
+@font-face {
+  font-family: "IA Writer Mono";
+  src: url("../font/ia_writer_mono/ia-writer-mono-latin-400-normal.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IA Writer Mono";
+  src: url("../font/ia_writer_mono/ia-writer-mono-latin-700-normal.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IA Writer Mono";
+  src: url("../font/ia_writer_mono/ia-writer-mono-latin-400-italic.woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "IA Writer Mono";
+  src: url("../font/ia_writer_mono/ia-writer-mono-latin-700-italic.woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 .xythese {
   font-family: xythese;
