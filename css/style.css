@@ -94,6 +94,7 @@ ul li {
 
 ul li:before {
   content: "- ";
+  color: white;
 }
 
 footer {
@@ -124,6 +125,7 @@ th {
   overflow: hidden;
   padding: 10px 8px;
   word-break: normal;
+  white-space: nowrap;
 }
 
 td {
@@ -138,6 +140,12 @@ td {
   overflow: hidden;
   padding: 10px 8px;
   word-break: normal;
+  white-space: nowrap;
+}
+
+code {
+  background-color: var(--block-bg-color);
+  font-family: var(--font);
 }
 
 .indexfooter {
