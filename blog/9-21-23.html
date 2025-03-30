@@ -1,85 +1,108 @@
-<DOCTYPE !HTML>
-    <html>
-        <head>
-            <link rel="stylesheet" type="text/css" href="../css/style.css">
-            <title>
-                nanobot567's website | blog | 9/21/23
-            </title>
-        </head>
-        <body>
-            <script>
-                function swapColors() {
-                    var textElement = document.querySelector('.colorswap');
-                    var computedStyle = getComputedStyle(textElement);
-                    var currentBgColor = computedStyle.backgroundColor;
-                    var currentColor = computedStyle.color;
-                    textElement.style.backgroundColor = currentColor;
-                    textElement.style.color = currentBgColor;
-                }
-    
-                setInterval(swapColors, 250);
-            </script>
-            <h4 class = "backbtn"><a href="../blog.html"><-- back</a></h4>
-            <h1 class = "title">nanobot567's website<span class="blink">_</span> </h1>
-            <h2>blog</h2>
+<!DOCTYPE HTML>
+<html>
 
-            <h3><u>9/21/23 - The Framework Laptop 13 Experience</u></h3>
-            <p>
-                I recieved my <a href="https://frame.work">Framework</a> Laptop 13 today! I decided to write a blog post about it becuase it seemed like a fun idea :)
-            </p>
-            <h3>
-                First impressions
-            </h3>
-            <p>
-                I really liked how they organize everything in the box, definitely felt professional. And free stickers?? <span class="redacted">Heck yeah!</span>        
-            </p>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>
+    nanobot567's website | blog | 9/21/23
+  </title>
+</head>
 
-            <img src="images/fw1.jpg" alt="framework laptop 13 box" style="height: 50%; width: auto;"></img>
+<body>
+  <script>
+    function swapColors() {
+      var textElement = document.querySelector('.colorswap');
+      var computedStyle = getComputedStyle(textElement);
+      var currentBgColor = computedStyle.backgroundColor;
+      var currentColor = computedStyle.color;
+      textElement.style.backgroundColor = currentColor;
+      textElement.style.color = currentBgColor;
+    }
 
-            <h3>
-                Build process
-            </h3>
-            <p>The build was actually much easier than I thought it would be. All of the instructions are pretty clearly laid out on the website. As a lot of people said, the bezel is pretty flimsy, although when you put it on the laptop you can't tell at all. The only problem I had while putting it together was the input cover not fitting in perfectly, but that fixed itself as soon as I screwed it in.</p>
-            <p>Here's a picture of the completed build:</p>
-            <img src="images/fw2.jpg" alt="completed build of framework laptop 13 with red bezel" style="height: 50%; width: auto;"></img>
-            <h5><i>(ignore the cardboard mess in the background XD)</i></h5>
-            <h3>
-                First boot
-            </h3>
-            <p>
-                I didn't even check to see what happens if you don't have an operating system installed yet, I went ahead and booted from USB. The system took about a minute to boot, but this was because it was doing "memory training" (that's what they said online, anyway :P). It installed Fedora 38 Cinnamon without a hitch.
-            </p>
-            <h3>
-                First boot into an actual operating system
-            </h3>
-            <p>
-                Fedora 38 worked flawlessly! I was able to get completely moved into the laptop in about 30 minutes (but this was mainly due to a poor WiFi connection when downloading package updates and copying stuff over from my old computer). It may have been just because I've been using ~10 year old hardware for a long time, but MAN it is so fast! Even the base CPU (i5-1340P) is lightning quick when opening apps such as Firefox, which normally takes a long time.
-            </p>
-            <h3 class="rainbow">
-                ~ Gaming ~
-            </h3>
-            <p>
-              Here's how the Laptop 13 handled some of the games I own:
-            </p>
-            <li>
-                <ul><b>Superhot and Superhot MCD:</b> Nearly consistent FPS on low settings. Normal config is kind of meh in Superhot, but in MCD they must have done some crazy optimization, because performance was about the same!</ul>
-                <ul><b>Minecraft: </b>Almost consistent 60 FPS with a render distance of 18, the Sodium mod, and VSYNC turned on. (Without VSYNC, I got around 200 FPS[<span class="redacted">!!</span>])</ul>
-                <ul><b>Portal and Portal 2: </b><span style="color:green">Perfect!</span></ul>
-                <ul><b>Terraria: </b><span style="color:greenyellow; background-color: black;" class="colorswap">Perfect-er!</span></ul>
-                <ul><b>Risk of Rain 2 (through Wine / Steam Proton):</b> I will say I had a couple issues initially, the game crashed often and Cinnamon didn't like me running the game in fullscreen, but after a while it seemed to have ironed out all of the issues itself, and ran pretty well!</ul>
-            </li>
-            <p>I also tried running OBS in the background, recording at 60 FPS, 1920 x 1280. Next to no frame drops on anything, which is a pretty massive deal! Maybe I can start doing YouTube stuff again :)</p>
+    setInterval(swapColors, 250);
+  </script>
+  <h4 class="backbtn"><a href="../blog.html"><-- back</a></h4>
+  <h1 class="title">nanobot567's website<span class="blink">_</span> </h1>
+  <h2>blog</h2>
 
-            <h3>
-                Minor gripes
-            </h3>
+  <h3><u>9/21/23 - The Framework Laptop 13 Experience</u></h3>
+  <p>
+    I recieved my <a href="https://frame.work">Framework</a> Laptop 13 today! I decided to write a blog post about it
+    becuase it seemed like a fun idea :)
+  </p>
+  <h3>
+    First impressions
+  </h3>
+  <p>
+    I really liked how they organize everything in the box, definitely felt professional. And free stickers?? <span
+      class="redacted">Heck yeah!</span>
+  </p>
 
-            <li>
-                <ul>3:2 as a monitor aspect ratio on a modern laptop is really strange, although it is pretty cool! (If I desperately need the traditional 16:9 ratio, I can always just switch the display resolution or use a separate monitor)</ul>
-                <ul>Touchpad is a little bit weird. You press it down with medium pressure and it makes a small *click* sound, making you think that it has clicked, but in reality you need to press harder! It's like how touchpads used to be on MacBook Pros, except the first click does absolutely nothing.</ul>
-                <ul>It's pretty difficult to swap out expansion cards, but I'm sure over time it'll become smoother.</ul>
-            </li>
-            <h4 class = "backbtn"><a href="../blog.html"><-- back</a> | <a href="#">^ top</a></h4>
-        </body> 
-    </html>
-</DOCTYPE>
+  <img src="images/fw1.jpg" alt="framework laptop 13 box" style="height: 50%; width: auto;"></img>
+
+  <h3>
+    Build process
+  </h3>
+  <p>The build was actually much easier than I thought it would be. All of the instructions are pretty clearly laid out
+    on the website. As a lot of people said, the bezel is pretty flimsy, although when you put it on the laptop you
+    can't tell at all. The only problem I had while putting it together was the input cover not fitting in perfectly,
+    but that fixed itself as soon as I screwed it in.</p>
+  <p>Here's a picture of the completed build:</p>
+  <img src="images/fw2.jpg" alt="completed build of framework laptop 13 with red bezel"
+    style="height: 50%; width: auto;"></img>
+  <h5><i>(ignore the cardboard mess in the background XD)</i></h5>
+  <h3>
+    First boot
+  </h3>
+  <p>
+    I didn't even check to see what happens if you don't have an operating system installed yet, I went ahead and booted
+    from USB. The system took about a minute to boot, but this was because it was doing "memory training" (that's what
+    they said online, anyway :P). It installed Fedora 38 Cinnamon without a hitch.
+  </p>
+  <h3>
+    First boot into an actual operating system
+  </h3>
+  <p>
+    Fedora 38 worked flawlessly! I was able to get completely moved into the laptop in about 30 minutes (but this was
+    mainly due to a poor WiFi connection when downloading package updates and copying stuff over from my old computer).
+    It may have been just because I've been using ~10 year old hardware for a long time, but MAN it is so fast! Even the
+    base CPU (i5-1340P) is lightning quick when opening apps such as Firefox, which normally takes a long time.
+  </p>
+  <h3 class="rainbow">
+    ~ Gaming ~
+  </h3>
+  <p>
+    Here's how the Laptop 13 handled some of the games I own:
+  </p>
+  <li>
+    <ul><b>Superhot and Superhot MCD:</b> Nearly consistent FPS on low settings. Normal config is kind of meh in
+      Superhot, but in MCD they must have done some crazy optimization, because performance was about the same!</ul>
+    <ul><b>Minecraft: </b>Almost consistent 60 FPS with a render distance of 18, the Sodium mod, and VSYNC turned on.
+      (Without VSYNC, I got around 200 FPS[<span class="redacted">!!</span>])</ul>
+    <ul><b>Portal and Portal 2: </b><span style="color:green">Perfect!</span></ul>
+    <ul><b>Terraria: </b><span style="color:greenyellow; background-color: black;" class="colorswap">Perfect-er!</span>
+    </ul>
+    <ul><b>Risk of Rain 2 (through Wine / Steam Proton):</b> I will say I had a couple issues initially, the game
+      crashed often and Cinnamon didn't like me running the game in fullscreen, but after a while it seemed to have
+      ironed out all of the issues itself, and ran pretty well!</ul>
+  </li>
+  <p>I also tried running OBS in the background, recording at 60 FPS, 1920 x 1280. Next to no frame drops on anything,
+    which is a pretty massive deal! Maybe I can start doing YouTube stuff again :)</p>
+
+  <h3>
+    Minor gripes
+  </h3>
+
+  <li>
+    <ul>3:2 as a monitor aspect ratio on a modern laptop is really strange, although it is pretty cool! (If I
+      desperately need the traditional 16:9 ratio, I can always just switch the display resolution or use a separate
+      monitor)</ul>
+    <ul>Touchpad is a little bit weird. You press it down with medium pressure and it makes a small *click* sound,
+      making you think that it has clicked, but in reality you need to press harder! It's like how touchpads used to be
+      on MacBook Pros, except the first click does absolutely nothing.</ul>
+    <ul>It's pretty difficult to swap out expansion cards, but I'm sure over time it'll become smoother.</ul>
+  </li>
+  <h4 class="backbtn"><a href="../blog.html"><-- back</a> | <a href="#">^ top</a></h4>
+</body>
+
+</html>
