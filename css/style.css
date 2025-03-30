@@ -1,8 +1,20 @@
+:root {
+  --bg-color: #0f0f0f;
+  --text-color: #ddd;
+  --link-color: #ff0000;
+  --link-outgoing-indicator-color: #bbb;
+  --visited-link-color: #af0000;
+  --button-bg-color: #282828;
+  --button-text-color: #ff0000;
+  --block-bg-color: #222;
+  --block-border-color: #333;
+  --font: "IA Writer Mono";
+}
+
 body {
-  color: #ddd;
-  font-family: "IA Writer Mono";
-  background-color: #0f0f0f;
-  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--font);
   margin-left: 10px;
   max-width: 70%;
   position: relative;
@@ -16,30 +28,42 @@ blockquote {
 }
 
 button {
-  background-color: rgb(40, 40, 40);
-  color: rgb(255, 0, 0);
-  font-family: "IA Writer Mono";
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  font-family: var(--font);
 }
 
 p.block {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
-  background-color: #222;
+  background-color: var(--block-bg-color);
   border-style: dotted;
-  border-color: #333;
+  border-color: var(--block-border-color);
+}
+
+a[target="_blank"]::after {
+  content: "🡵";
+  display: inline-block;
+  height: 0.5em;
+  padding-inline: 0.2em;
+  aspect-ratio: 1;
+  line-height: 1.5;
+  vertical-align: text-top;
+  font-size: 0.7em;
+  color: var(--link-outgoing-indicator-color);
 }
 
 a:visited,
 a.menu:link,
 a.menu:visited {
-  color: rgb(175, 0, 0);
+  color: var(--visited-link-color);
 }
 
 .redacted,
 a:link,
 .red {
-  color: red;
+  color: var(--link-color)
 }
 
 img {
@@ -88,6 +112,7 @@ header {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  white-space: nowrap;
 }
 
 th {
