@@ -42,7 +42,7 @@ p.block {
   border-color: var(--block-border-color);
 }
 
-a[target="_blank"]::after {
+a[target="_blank"]:not(.noindicator):after {
   content: "🡵";
   display: inline-block;
   height: 0.5em;
