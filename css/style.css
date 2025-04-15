@@ -15,7 +15,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   font-family: var(--font);
-  margin-left: 10px;
+  margin-left: 1%;
   max-width: 70%;
   position: relative;
   margin-bottom: 20px;
@@ -100,15 +100,12 @@ ul li:before {
 footer {
   text-align: center;
   color: white;
-  position: fixed;
-  bottom: 0px;
 }
 
 header {
   text-align: left;
   color: white;
 }
-
 
 table {
   border-collapse: collapse;
@@ -150,8 +147,12 @@ code {
 
 .indexfooter {
   padding-bottom: 1em;
-  width: 100%;
   text-align: left;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0px;
 }
 
 .blink {
