@@ -167,6 +167,23 @@ code {
   animation: 0.5s linear infinite condemned_blink_effect;
 }
 
+.centerbox {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flipimage {
+  transform: scaleX(-1);
+}
+
+.inlineimage {
+  height: 2em;
+  vertical-align: text-bottom;
+}
+
 /* fonnnnts */
 
 @font-face {
