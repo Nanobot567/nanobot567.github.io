@@ -16,7 +16,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--font);
   margin-left: 1%;
-  max-width: 70%;
+  max-width: 80%;
   position: relative;
   margin-bottom: 20px;
 }
@@ -147,12 +147,15 @@ code {
 
 .indexfooter {
   padding-bottom: 1em;
-  text-align: left;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom {
   position: fixed;
   bottom: 0px;
+  margin-right: 1%;
 }
 
 .blink {
