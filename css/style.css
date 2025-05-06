@@ -197,7 +197,7 @@ code {
 }
 
 .footerflagsetc {
-  height: 3em;
+  max-height: 3em;
 }
 
 /* fonnnnts */
