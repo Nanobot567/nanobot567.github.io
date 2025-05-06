@@ -19,6 +19,11 @@ body {
   max-width: 80%;
   position: relative;
   margin-bottom: 20px;
+
+  /* background-image: linear-gradient(var(--bg-color), #151515); */
+  /* height: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
 }
 
 blockquote {
@@ -185,6 +190,14 @@ code {
 .inlineimage {
   height: 2em;
   vertical-align: text-bottom;
+}
+
+.emoji {
+  height: 3em;
+}
+
+.footer-flags-etc {
+  height: 3em;
 }
 
 /* fonnnnts */
