@@ -237,6 +237,8 @@ code {
   font-family: xythese;
 }
 
+
+
 /* for Safari 4.0 - 8.0 */
 @-webkit-keyframes condemned_blink_effect {
   0% {
@@ -274,22 +276,21 @@ code {
       #00ff11,
       #0084ff,
       #a200ff,
-      #ff00ea);
+      #ff00ea,
+      #ff0000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: rainbow_animation 3s ease-in-out infinite;
-  background-size: 400% 100%;
+  animation: rainbow_animation 3s linear infinite;
+  background-size: 45em 100%;
 }
 
 @keyframes rainbow_animation {
-
-  0%,
-  100% {
-    background-position: 0 0;
+  0% {
+    background-position: 0% 0;
   }
 
-  50% {
-    background-position: 100% 0;
+  100% {
+    background-position: 46em 0;
   }
 }
