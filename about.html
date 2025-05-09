@@ -117,18 +117,27 @@
 
   <p>(My pixel art and color theory skills are kind of garbage so sorry if these look bad LOL)</p>
 
-  <img src="media/images/88x31/nanobot-red-filled-mono.gif" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a red light-to-dark gradient background." />
-  <img src="media/images/88x31/nanobot-orange-filled-mono.gif" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of an orange light-to-dark gradient background." />
-  <img src="media/images/88x31/nanobot-purple-filled-mono.gif" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a purple light-to-dark gradient background." />
-  <img src="media/images/88x31/rmna.gif" alt="Pixel art of an anthropomorphic red fox blinking, facing the text 'overflow' in a DOS font" />
-  <img src="media/images/88x31/nanobot567.gif" alt="Pixel art of an anthropomorphic red fox facing the text 'nanobot567' in a DOS font" />
+  <img src="media/images/88x31/nanobot-red-filled-mono.gif" class="no-antialiasing" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a red light-to-dark gradient background." />
+  <img src="media/images/88x31/nanobot-orange-filled-mono.gif" class="no-antialiasing" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of an orange light-to-dark gradient background." />
+  <img src="media/images/88x31/nanobot-purple-filled-mono.gif" class="no-antialiasing" alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a purple light-to-dark gradient background." />
+  <img src="media/images/88x31/rmna.gif" class="no-antialiasing" alt="Pixel art of an anthropomorphic red fox blinking, facing the text 'overflow' in a DOS font" />
+  <img src="media/images/88x31/nanobot567.gif" class="no-antialiasing" alt="Pixel art of an anthropomorphic red fox facing the text 'nanobot567' in a DOS font" />
 
   <p>Here's a template for embedding one of them directly, although I'd recommend replacing the URL with a local path:</p>
 
-  <div style="width: 70%;">
-    <p class="block">
+  <div class="block">
+    <p>
       &lt;a href="https://nanobot567.github.io/"&gt;&lt;img src="https://nanobot567.github.io/media/images/88x31/nanobot-orange-filled-mono.gif" /&gt;&lt;/a&gt;
     </p>
+  </div>
+
+    <p>For these I'd also recommend turning on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering" target="_blank">pixelated image rendering</a> to make them look <span class="rainbow">crispier!</span> Here's a CSS class that'll do the job:</p>
+
+  <div class="block">
+    <pre><code>.no-antialiasing {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+}</code></pre>
   </div>
 
   <h2>credits</h2>
