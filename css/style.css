@@ -1,5 +1,6 @@
 :root {
   --bg-color: #0f0f0f;
+  --bg-gradient-color: #303030;
   --text-color: #ddd;
   --link-color: #ff0000;
   --link-outgoing-indicator-color: #bbb;
@@ -20,11 +21,11 @@ body {
   position: relative;
   margin-bottom: 20px;
 
-  background-image: linear-gradient(90deg, var(--bg-color), #1e1e1e);
+  background-image: linear-gradient(90deg, var(--bg-color), var(--bg-gradient-color));
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: 65vw;
+  background-position-x: 40vw;
 }
 
 blockquote {
@@ -122,7 +123,7 @@ table {
 }
 
 th {
-  border-color: white;
+  border-color: #d0d0d0;
   border-style: solid;
   border-width: 1px;
 
@@ -138,7 +139,7 @@ td {
   vertical-align: center;
   text-decoration: none;
 
-  border-color: white;
+  border-color: #d0d0d0;
   border-style: solid;
   border-width: 1px;
 
@@ -177,13 +178,6 @@ code {
   -webkit-animation: 0.5s linear infinite condemned_blink_effect;
   /* for Safari 4.0 - 8.0 */
   animation: 0.5s linear infinite condemned_blink_effect;
-}
-
-.fediring {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .centerbox {
