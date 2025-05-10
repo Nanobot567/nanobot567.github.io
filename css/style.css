@@ -169,7 +169,6 @@ code {
 .bottom {
   position: fixed;
   bottom: 0px;
-  /* margin-right: var(-); */
   max-width: var(--width);
 }
 
@@ -213,6 +212,11 @@ code {
 .no-antialiasing {
   image-rendering: optimizeSpeed;
   image-rendering: pixelated;
+}
+
+.constrain-8831 {
+  width: 88px;
+  height: 31px;
 }
 
 /* fonnnnts */
