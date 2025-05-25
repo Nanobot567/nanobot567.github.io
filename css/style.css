@@ -74,7 +74,6 @@ a[target="_blank"]:visited {
   color: var(--visited-link-color);
 }
 
-.redacted,
 a:link,
 .red {
   color: var(--link-color)
@@ -217,6 +216,33 @@ code {
 .constrain-8831 {
   width: 88px;
   height: 31px;
+}
+
+.art {
+  width: 50%;
+}
+
+.redacted {
+  background-color: #333;
+  color: red;
+}
+
+.blogimage {
+  width: 50%;
+}
+
+.vertblogimage {
+  width: 35%;
+}
+
+.normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.caption {
+  font-size: 0.85em;
+  font-style: italic;
 }
 
 /* fonnnnts */
