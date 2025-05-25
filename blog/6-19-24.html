@@ -6,19 +6,8 @@
   <title>
     nanobot567's website | blog | 6/19/24
   </title>
-  <script src="../js/index.js"></script>
-  <script>
-    function swapColors() {
-      var textElement = document.querySelector('.colorswap');
-      var computedStyle = getComputedStyle(textElement);
-      var currentBgColor = computedStyle.backgroundColor;
-      var currentColor = computedStyle.color;
-      textElement.style.backgroundColor = currentColor;
-      textElement.style.color = currentBgColor;
-    }
-
-    setInterval(swapColors, 250);
-  </script>
+  <script src="../js/hideshow.js"></script>
+  <script src="../js/swapcolors.js"></script>
 </head>
 
 <body>
@@ -43,7 +32,7 @@
   <p />
 
   This is actually the game's card-pressed image, located at <span
-    class="redacted">/src/SystemAssets/card-pressed.png</span>. I guess I didn't
+    class="red">/src/SystemAssets/card-pressed.png</span>. I guess I didn't
   really have a clue what I was working on at this point, so it makes sense.
   <p />
 
@@ -138,9 +127,9 @@
   <p />
 
   I added some placeholder art (still haven't changed any of it haha), shops, and the first "attack game" in
-  commit <span class="redacted">461179f</span>, finally started throwing together the introduction to one of the
-  main characters in <span class="redacted">3d09875</span>,
-  and completed map preloading in <span class="redacted">79aaaf8</span>.
+  commit <span class="red">461179f</span>, finally started throwing together the introduction to one of the
+  main characters in <span class="red">3d09875</span>,
+  and completed map preloading in <span class="red">79aaaf8</span>.
   <p />
 
   Eventually, I figured out that getIDfromChar() issue I mentioned earlier, which boosted map loading a
@@ -165,14 +154,14 @@
   haha.
   <p />
 
-  In commit <span class="redacted">d80eb14</span> ("fixed battle damage rounding, cleaned up introchoices, updated
+  In commit <span class="red">d80eb14</span> ("fixed battle damage rounding, cleaned up introchoices, updated
   docs", February 29) my
   documentation for the game became much more massive. I find that more Markdown is always better for big
   projects. Personally, I use it for both ideas and TODO lists that I divide into high, medium, and low
   priorities. Very helpful to have :)
   <p />
 
-  I officially changed the name of the game from Overflow to Segfault in commit <span class="redacted">a4ec205</span>!
+  I officially changed the name of the game from Overflow to Segfault in commit <span class="red">a4ec205</span>!
   Honestly, this wasn't
   really a hard decision and I don't regret it, although Overflow does roll off the tongue better.
   <p />
@@ -180,7 +169,7 @@
   <img src="images/6-19-24/newname.png" alt="the word SEGFAULT in a big DOS-era font."></img>
   <p />
 
-  Achievements were added in <span class="redacted">cd918f1</span>, in March of this year. Currently, I'm waiting
+  Achievements were added in <span class="red">cd918f1</span>, in March of this year. Currently, I'm waiting
   for the Playdate Squad's
   <a href="https://github.com/PlaydateSquad/pd-achievements" target="_blank">pd-achievements</a> standard to be finalized before I
   do too much work on them. I suppose I could go ahead and
@@ -189,13 +178,13 @@
   <p />
 
   I finished a bunch of status effects (such as regeneration, vigor, fortitude) in commit <span
-    class="redacted">7bd0424</span>, which are
+    class="red">7bd0424</span>, which are
   only utilized in battles at the moment. Around this time, my main focus was on the battle engine that I
   assumed would be the most "exciting" part of the game, and I was constantly trying to figure out new ways to
   make it more fun. Even now, the game is still a bit of a top-down walking simulator.
   <p />
 
-  In commit <span class="redacted">f540897</span>, I created the second attack game besides the standard "bar" game:
+  In commit <span class="red">f540897</span>, I created the second attack game besides the standard "bar" game:
   reload. It involves the
   user cranking backwards and forwards and pressing A in quick succession. The faster you do this, the more
   damage is inflicted. Not the most realistic thing ever, but I find it pretty fun!
@@ -207,14 +196,14 @@
   </div>
   <p />
 
-  <span class="redacted">284c40a</span> added an item count to the "items" menu, which is a pretty huge deal
+  <span class="red">284c40a</span> added an item count to the "items" menu, which is a pretty huge deal
   considering the sheer amount of
   items I'll probably have in this game closer to release. It was already a pain trying to scroll through all
   of them even in testing, so (for me at least) this is a very nice QoL change.
   <p />
 
   It took me way too long to add game restarting on death, which was added in May 27 in commit <span
-    class="redacted">2a40577</span>. I
+    class="red">2a40577</span>. I
   guess since I had been manually refreshing the game up to this point anyway, it didn't seem like too big of
   a deal, but now that I'm kind of getting down to the wire on the game engine it occurred to me that this is
   a no-brainer that should have been in the game from the start, haha.
