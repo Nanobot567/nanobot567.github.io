@@ -85,27 +85,16 @@ img {
   width: auto;
 }
 
-ol li {
-  list-style-type: none;
-  counter-increment: list;
-  position: relative;
-}
-
-ol li:after {
-  content: counter(list) ".";
-  position: absolute;
-  left: -2.5em;
-  width: 2em;
-  text-align: right;
-  color: white;
-}
+/* ol > li::marker { */
+/*   font-weight: bold; */
+/* } */
 
 ul li {
   list-style-type: none;
   counter-increment: list;
 }
 
-ul li:before {
+ul li::before {
   content: "- ";
   color: white;
 }
