@@ -55,15 +55,16 @@ div.block {
 }
 
 a[target="_blank"]:not(.noindicator):after {
-  content: "🡵";
+  /* if you need to change the stroke color, do a s//g on stroke:*; */
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!-- Created with Inkscape (http://www.inkscape.org/) --%3E%3Csvg class='outgoing' viewBox='0 0 9.2953832 9.1779929' version='1.1' id='svg1' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs1' /%3E%3Cg id='layer1' transform='translate(-2.6486934,-1.4021456)'%3E%3Cpath style='fill:none;stroke:%23ccc;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers' d='m 6.6145837,3.0459044 -3.5690153,4.71e-5 V 10.183263 H 10.183599 V 6.6142553' id='path1' /%3E%3Cg id='g3' style='stroke:%23ccc;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1'%3E%3Cpath style='fill:none;stroke:%23ccc;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers' d='M 8.1583492,1.7990206 H 11.547202 V 5.1041979' id='path2' /%3E%3Cpath style='fill:none;stroke:%23ccc;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers' d='M 11.589041,1.7383641 6.2756533,7.0517505' id='path3' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   display: inline-block;
-  height: 0.5em;
-  padding-inline: 0.2em;
+  width: 1em;
+  height: 1em;
+  padding-inline-start: 0.4em;
   aspect-ratio: 1;
-  line-height: 1.5;
+  line-height: 2;
   vertical-align: text-top;
-  font-size: 0.7em;
-  color: var(--link-outgoing-indicator-color);
+  font-size: 0.55em;
 }
 
 a:visited {
