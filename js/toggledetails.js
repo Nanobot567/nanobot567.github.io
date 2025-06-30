@@ -1,13 +1,26 @@
-let toggled = false;
-
 function toggleAllDetails() {
-  toggled = !toggled;
+  let oneIsOpen = false;
 
-  document.body.querySelectorAll('details').forEach((e) => {
-    if (e.hasAttribute("open") && !toggled) {
-      e.removeAttribute("open")
-    } else {
-      e.setAttribute("open", true)
+  let allDetails = document.body.querySelectorAll("details");
+
+  allDetails.forEach((e) => {
+    if (e.hasAttribute("open")) {
+      oneIsOpen = true;
+      return;
     }
-  })
+  }) 
+
+  if (oneIsOpen) {
+    allDetails.forEach((e) => {
+      if (e.hasAttribute("open")) {
+        e.removeAttribute("open")
+      }
+    })
+  } else {
+    allDetails.forEach((e) => {
+      if (!e.hasAttribute("open")) {
+        e.setAttribute("open", true)
+      }
+    })
+  }
 }
