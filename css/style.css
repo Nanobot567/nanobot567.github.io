@@ -32,6 +32,8 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  /* animation: background_gradient_animation 7s ease-in-out infinite; */
 }
 
 blockquote {
@@ -334,5 +336,20 @@ code {
 
   100% {
     background-position: 46em 0;
+  }
+}
+
+
+@keyframes background_gradient_animation {
+  0% {
+    background-position-x: 8em;
+  }
+
+  50% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 8em;
   }
 }
