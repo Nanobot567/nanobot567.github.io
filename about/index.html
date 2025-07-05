@@ -6,6 +6,8 @@
   <title>
     nanobot567's website | about
   </title>
+
+  <script src="/js/colorscheme.js"></script>
 </head>
 
 <body>
@@ -50,9 +52,16 @@
   <h2>my favorite things</h2>
 
   <ul>
-    <li>Favorite color(s): <span style="color: #c40505;">#c40505</span>, <span style="color: #ff6010;">#ff6010</span>,
-      <span style="color: #2492d6;">#2492d6</span>, <span style="color: #530fff">#530fff</span>
+
+    <!-- TODO: make this color scheme global with localstorage api :P -->
+
+    <li>Favorite color(s): 
+      <button style="color: #c40505;" onclick="changeColorScheme('red')">#c40505</button>,
+      <button style="color: #ff6010;" onclick="changeColorScheme('orange')">#ff6010</button>,
+      <button style="color: #2492d6;" onclick="changeColorScheme('blue')">#2492d6</button>,
+      <button style="color: #530fff;" onclick="changeColorScheme('purple')">#530fff</button>
     </li>
+
     <li>Favorite soda: RC Cola</li>
     <li>Favorite dessert: tiramisu</li>
     <li>Favorite animal: red fox &#129418;</li>
@@ -165,10 +174,9 @@
     alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a red light-to-dark gradient background." />
   <img src="/media/images/88x31/nanobot-orange-filled-mono.gif" class="no-antialiasing"
     alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of an orange light-to-dark gradient background." />
-  <img src="/media/images/88x31/nanobot-purple-filled-mono.gif" class="no-antialiasing"
-    alt="Pixel art of a male human wearing glasses and a female anthropomorphic red fox looking at one another, in front of a purple light-to-dark gradient background." />
   <img src="/media/images/88x31/nanobot567.gif" class="no-antialiasing"
     alt="Pixel art of an anthropomorphic red fox facing the text 'nanobot567' in a DOS font" />
+  <img src="/media/images/88x31/nanobot567-2.gif" class="no-antialiasing" />
 
   <p>Here's a template for embedding one directly, although I'd recommend replacing the URL with a local path so it
     doesn't take as long to load the button:</p>
