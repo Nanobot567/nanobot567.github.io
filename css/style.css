@@ -51,6 +51,7 @@ button {
 div.block {
   width: 60em; /* rahhhh ems are so useful */
   padding-left: 1em;
+  padding-right: 1em;
   background-color: var(--block-bg-color);
   border-style: dotted;
   border-color: var(--block-border-color);
