@@ -49,7 +49,7 @@ button {
 }
 
 div.block {
-  width: 60em; /* rahhhh ems are so useful */
+  width: 100% - 60em; /* rahhhh ems are so useful */
   padding-left: 1em;
   padding-right: 1em;
   background-color: var(--block-bg-color);
