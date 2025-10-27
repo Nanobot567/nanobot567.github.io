@@ -142,7 +142,7 @@ td {
   border-width: 1px;
 
   overflow: hidden;
-  padding: 10px 8px;
+  padding: 12px;
   word-break: normal;
   white-space: nowrap;
 }
@@ -227,6 +227,10 @@ code {
 
 .vertblogimage {
   width: 35%;
+}
+
+.tableimage {
+  width: 6em;
 }
 
 .normal {
